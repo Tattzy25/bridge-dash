@@ -1,9 +1,17 @@
-"use client";
-
-export default function Ai02() {
+export default function BridgitAIPage() {
 	return (
-		<div className="flex flex-col items-center justify-center min-h-[calc(100vh-16rem)] p-4 sm:p-8">
-			<div className="text-6xl font-bold text-muted-foreground">🙂</div>
+		<div className="flex-1 overflow-hidden flex flex-col">
+			<iframe
+				src="https://udify.app/chatbot/LCUchFqSLT7THyL9"
+				style={{ 
+					width: "100%", 
+					height: "100%", 
+					display: "block",
+					border: "none"
+				}}
+				frameBorder="0"
+				allow="microphone"
+			/>
 		</div>
 	);
 }
