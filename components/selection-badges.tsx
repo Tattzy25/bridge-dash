@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import { useSelection } from "@/components/providers/selection-provider";
-import { Badge } from "@/components/ui/badge";
 import CreateButton from "@/components/Create Button/CreateButton";
+import { useSelection } from "@/components/providers/selection-provider";
 import UserGenerations from "@/components/User Generations/user-generations";
+import { Badge } from "@/components/ui/badge";
 import { useBadgeLabels } from "@/hooks/use-badge-labels";
 import { useGenerator } from "@/hooks/use-generator";
 

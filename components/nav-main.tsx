@@ -1,6 +1,6 @@
 "use client";
 
-import { type Icon, IconCirclePlusFilled, IconMail } from "@tabler/icons-react";
+import { type Icon } from "@tabler/icons-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -37,21 +37,12 @@ export function NavMain({
 							asChild
 						>
 							<Link
-								href="/tattty/quick-skills"
+								href="/bridgit-ai/quick-skills"
 								onClick={() => isMobile && setOpenMobile(false)}
 							>
-								<IconCirclePlusFilled />
 								<span className="text-lg">Quick Skills</span>
 							</Link>
 						</SidebarMenuButton>
-						<Button
-							className="size-8 group-data-[collapsible=icon]:opacity-0"
-							size="icon"
-							variant="outline"
-						>
-							<IconMail />
-							<span className="sr-only">Inbox</span>
-						</Button>
 					</SidebarMenuItem>
 				</SidebarMenu>
 				<SidebarMenu>

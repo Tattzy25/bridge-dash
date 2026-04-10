@@ -1,12 +1,12 @@
 "use client";
 
+import { IconSettings } from "@tabler/icons-react";
+import Link from "next/link";
 import { KbdInputGroup } from "@/components/kbd-search";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { IconSettings } from "@tabler/icons-react";
-import Link from "next/link";
 
 export function SiteHeader() {
 	return (
@@ -22,7 +22,7 @@ export function SiteHeader() {
 				</div>
 				<div className="flex items-center gap-1 sm:gap-2">
 					<Button size="icon" variant="outline" asChild>
-						<Link href="/tattty/settings">
+						<Link href="/bridgit-ai/settings">
 							<IconSettings className="h-[1.2rem] w-[1.2rem]" />
 							<span className="sr-only">Settings</span>
 						</Link>

@@ -1,7 +1,6 @@
 "use client";
 
 import {
-	IconInnerShadowTop,
 	IconListDetails,
 	IconSparkles,
 	IconTypography,
@@ -22,17 +21,17 @@ const data = {
 	navMain: [
 		{
 			title: "Bridgit-AI",
-			url: "/tattty",
+			url: "/bridgit-ai",
 			icon: IconSparkles,
 		},
 		{
-			title: "Inspirations",
-			url: "/tattty/gallery",
+			title: "Skills",
+			url: "/bridgit-ai/skills",
 			icon: IconListDetails,
 		},
 		{
-			title: "Imagine Fonts",
-			url: "/tattty/fonts",
+			title: "MCP Bridgebox",
+			url: "/bridgit-ai/mcp-bridgebox",
 			icon: IconTypography,
 		},
 	],
@@ -46,11 +45,14 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 					<SidebarMenuItem>
 						<SidebarMenuButton
 							asChild
-							className="data-[slot=sidebar-menu-button]:p-1.5!"
+							className="data-[slot=sidebar-menu-button]:p-0! h-auto"
 						>
-							<a href="/tattty/quick-skills">
-								<IconInnerShadowTop className="size-5!" />
-								<span className="font-semibold text-lg">Bridgit-AI</span>
+							<a href="/" className="flex w-full items-center justify-center">
+								<img 
+									src="https://cdn.shopify.com/s/files/1/0649/4155/5787/files/bridgit_ai_logo.png?v=1775759916" 
+									alt="Bridgit AI Logo" 
+									className="h-[100px] w-auto object-contain"
+								/>
 							</a>
 						</SidebarMenuButton>
 					</SidebarMenuItem>
