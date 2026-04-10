@@ -1,12 +1,9 @@
 "use client";
 
 import {
-	IconBrain,
-	IconChartBar,
 	IconHelp,
 	IconInnerShadowTop,
 	IconListDetails,
-	IconNetwork,
 	IconSettings,
 	IconSparkles,
 	IconTypography,
@@ -48,23 +45,6 @@ const data = {
 			url: "/tattty/fonts",
 			icon: IconTypography,
 		},
-		{
-			title: "Ink Redemption",
-			url: "/tattty/ink-redemption",
-			icon: IconBrain,
-		},
-		{
-			title: "Couples TaTTTz",
-			url: "/tattty/couples-tatttz",
-			icon: IconNetwork,
-		},
-	],
-	navProjects: [
-		{
-			title: "My TaTTTz",
-			url: "/my-tatttz",
-			icon: IconChartBar,
-		},
 	],
 	navSecondary: [
 		{
@@ -101,7 +81,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 			<SidebarContent>
 				<NavMain items={data.navMain} />
 				<div className="h-8" />
-				<NavSecondary items={data.navProjects} />
 				<NavSecondary className="mt-auto" items={data.navSecondary} />
 			</SidebarContent>
 			<SidebarFooter>
