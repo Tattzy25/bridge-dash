@@ -21,7 +21,7 @@ import {
 const data = {
 	navMain: [
 		{
-			title: "Tattty AI",
+			title: "Bridgit-AI",
 			url: "/tattty",
 			icon: IconSparkles,
 		},
@@ -48,9 +48,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 							asChild
 							className="data-[slot=sidebar-menu-button]:p-1.5!"
 						>
-							<a href="/tattty/quick-ideas">
+							<a href="/tattty/quick-skills">
 								<IconInnerShadowTop className="size-5!" />
-								<span className="font-semibold text-lg">Tattty AI</span>
+								<span className="font-semibold text-lg">Bridgit-AI</span>
 							</a>
 						</SidebarMenuButton>
 					</SidebarMenuItem>

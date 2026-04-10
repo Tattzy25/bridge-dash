@@ -3,7 +3,7 @@
 import {
 	QUICK_IDEAS_SUGGESTIONS,
 	QUICK_IDEAS_UI_TEXT,
-} from "@/app/tattty/constants";
+} from "@/app/bridgit-ai/constants";
 import { ScrollerHorizontal } from "@/components/horizontal-scroll";
 import { PromptInputArea } from "@/components/prompt-input-area";
 import SelectionBadges from "@/components/selection-badges";

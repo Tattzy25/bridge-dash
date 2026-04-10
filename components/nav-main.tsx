@@ -33,15 +33,15 @@ export function NavMain({
 					<SidebarMenuItem className="flex items-center gap-2">
 						<SidebarMenuButton
 							className="min-w-8 bg-primary text-primary-foreground duration-200 ease-linear hover:bg-primary/90 hover:text-primary-foreground active:bg-primary/90 active:text-primary-foreground"
-							tooltip="Quick Ideas"
+							tooltip="Quick Skills"
 							asChild
 						>
 							<Link
-								href="/tattty/quick-ideas"
+								href="/tattty/quick-skills"
 								onClick={() => isMobile && setOpenMobile(false)}
 							>
 								<IconCirclePlusFilled />
-								<span className="text-lg">Quick Ideas</span>
+								<span className="text-lg">Quick Skills</span>
 							</Link>
 						</SidebarMenuButton>
 						<Button

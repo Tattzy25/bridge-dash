@@ -62,7 +62,7 @@ export default function SelectionBadges() {
 
 		// Skip Q validation on routes that don't require Q1/Q2
 		const qOptionalRoutes = [
-			"/tattty/quick-ideas",
+			"/tattty/quick-skills",
 			"/tattty/fonts",
 			"/tattty/ink-redemption",
 			"/tattty/couples-tatttz",
