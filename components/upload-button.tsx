@@ -55,7 +55,8 @@ export const UploadButton = () => {
 					pathname: file.name,
 					contentType: file.type,
 					contentDisposition: `attachment; filename="${file.name}"`,
-				},
+					etag: "",
+				} as any,
 			};
 		});
 
