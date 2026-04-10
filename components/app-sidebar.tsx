@@ -1,0 +1,112 @@
+"use client";
+
+import {
+	IconBrain,
+	IconChartBar,
+	IconHelp,
+	IconInnerShadowTop,
+	IconListDetails,
+	IconNetwork,
+	IconSettings,
+	IconSparkles,
+	IconTypography,
+} from "@tabler/icons-react";
+import type * as React from "react";
+
+import { NavMain } from "@/components/nav-main";
+import { NavSecondary } from "@/components/nav-secondary";
+import { NavUser } from "@/components/nav-user";
+import {
+	Sidebar,
+	SidebarContent,
+	SidebarFooter,
+	SidebarHeader,
+	SidebarMenu,
+	SidebarMenuButton,
+	SidebarMenuItem,
+} from "@/components/ui/sidebar";
+
+const data = {
+	user: {
+		name: "shadcn",
+		email: "m@example.com",
+		avatar: "/avatars/shadcn.jpg",
+	},
+	navMain: [
+		{
+			title: "Tattty AI",
+			url: "/tattty",
+			icon: IconSparkles,
+		},
+		{
+			title: "Imagine Fonts",
+			url: "/tattty/fonts",
+			icon: IconTypography,
+		},
+		{
+			title: "Ink Redemption",
+			url: "/tattty/ink-redemption",
+			icon: IconBrain,
+		},
+		{
+			title: "Couples TaTTTz",
+			url: "/tattty/couples-tatttz",
+			icon: IconNetwork,
+		},
+	],
+	navProjects: [
+		{
+			title: "Inspirations",
+			url: "/tattty/gallery",
+			icon: IconListDetails,
+		},
+		{
+			title: "My TaTTTz",
+			url: "/my-tatttz",
+			icon: IconChartBar,
+		},
+	],
+	navSecondary: [
+		{
+			title: "Settings",
+			url: "/tattty/settings",
+			icon: IconSettings,
+		},
+		{
+			title: "Get Help",
+			url: "/tattty/get-help",
+			icon: IconHelp,
+		},
+	],
+};
+
+export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+	return (
+		<Sidebar collapsible="offcanvas" {...props}>
+			<SidebarHeader>
+				<SidebarMenu>
+					<SidebarMenuItem>
+						<SidebarMenuButton
+							asChild
+							className="data-[slot=sidebar-menu-button]:p-1.5!"
+						>
+							<a href="/tattty/quick-ideas">
+								<IconInnerShadowTop className="size-5!" />
+								<span className="font-semibold text-lg">Tattty AI</span>
+							</a>
+						</SidebarMenuButton>
+					</SidebarMenuItem>
+				</SidebarMenu>
+			</SidebarHeader>
+			<SidebarContent>
+				<NavMain items={data.navMain} />
+				<div className="h-8" />
+				<NavSecondary items={data.navProjects} />
+				<NavSecondary className="mt-auto" items={data.navSecondary} />
+			</SidebarContent>
+			<SidebarFooter>
+				<NavUser user={data.user} />
+			</SidebarFooter>
+		</Sidebar>
+	);
+}
