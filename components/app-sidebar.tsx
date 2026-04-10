@@ -39,6 +39,11 @@ const data = {
 			icon: IconSparkles,
 		},
 		{
+			title: "Inspirations",
+			url: "/tattty/gallery",
+			icon: IconListDetails,
+		},
+		{
 			title: "Imagine Fonts",
 			url: "/tattty/fonts",
 			icon: IconTypography,
@@ -55,11 +60,6 @@ const data = {
 		},
 	],
 	navProjects: [
-		{
-			title: "Inspirations",
-			url: "/tattty/gallery",
-			icon: IconListDetails,
-		},
 		{
 			title: "My TaTTTz",
 			url: "/my-tatttz",
