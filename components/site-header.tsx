@@ -7,6 +7,12 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export function SiteHeader() {
 	return (
@@ -21,12 +27,22 @@ export function SiteHeader() {
 					<KbdInputGroup />
 				</div>
 				<div className="flex items-center gap-1 sm:gap-2">
-					<Button size="icon" variant="outline" asChild>
-						<Link href="/bridgit-ai/settings">
-							<IconSettings className="h-[1.2rem] w-[1.2rem]" />
-							<span className="sr-only">Settings</span>
-						</Link>
-					</Button>
+					<DropdownMenu>
+						<DropdownMenuTrigger asChild>
+							<Button size="icon" variant="outline">
+								<IconSettings className="h-[1.2rem] w-[1.2rem]" />
+								<span className="sr-only">Settings</span>
+							</Button>
+						</DropdownMenuTrigger>
+						<DropdownMenuContent align="end">
+							<DropdownMenuItem asChild>
+								<Link href="/bridgit-ai/settings">Settings</Link>
+							</DropdownMenuItem>
+							<DropdownMenuItem asChild>
+								<Link href="/bridgit-ai/policies">Policies</Link>
+							</DropdownMenuItem>
+						</DropdownMenuContent>
+					</DropdownMenu>
 					<ModeToggle />
 				</div>
 			</div>

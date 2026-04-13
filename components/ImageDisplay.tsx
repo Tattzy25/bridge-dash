@@ -6,7 +6,6 @@ import { Label } from "@/components/ui/label";
 import { imageHelpers } from "@/lib/image-helpers";
 import type { ProviderTiming } from "@/lib/image-types";
 import { cn } from "@/lib/utils";
-import { Stopwatch } from "./Stopwatch";
 import {
 	Tooltip,
 	TooltipContent,
@@ -161,7 +160,6 @@ export function ImageDisplay({
 							</>
 						) : timing?.startTime ? (
 							<>
-								<Stopwatch startTime={timing.startTime} />
 							</>
 						) : (
 							<ImageIcon className="h-12 w-12 text-zinc-300" />

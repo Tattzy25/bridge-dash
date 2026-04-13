@@ -6,7 +6,7 @@ import { Search } from "@upstash/search";
 import type { PutBlobResult } from "@vercel/blob";
 
 const upstash = Search.fromEnv();
-const index = upstash.index("images");
+const index = upstash.index("SKILLZILLA");
 
 type SearchResponse =
 	| {
